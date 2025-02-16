@@ -1,0 +1,139 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #f0f4f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: #007acc;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li {
+  margin: 0 15px;
+}
+
+.nav-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #ffdd57;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: #e2f1ff;
+  animation: fadeIn 1.5s ease-in;
+}
+
+.hero img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.page-header {
+  text-align: center;
+  padding: 40px 20px;
+  background: #fff;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #007acc;
+  animation: slideDown 1s ease-out;
+}
+
+.page-header img {
+  max-width: 60%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.calculator,
+.exercises,
+.about-content {
+  background: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin: 10px 0 5px;
+}
+
+form input,
+form select {
+  padding: 8px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  margin-top: 15px;
+  padding: 10px;
+  background: #007acc;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #005f99;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+  }
+
+  .nav-menu li {
+    margin: 10px 0;
+  }
+}

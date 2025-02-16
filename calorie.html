@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Caloric Deficit &amp; BMR Calculators</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="bmi.html">BMI Calculator</a></li>
+        <li><a href="calorie.html">Caloric Deficit &amp; BMR Calculators</a></li>
+        <li><a href="exercises.html">Exercises</a></li>
+        <li><a href="about.html">About Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <h1>Caloric Deficit &amp; BMR Calculators</h1>
+      <img src="images/calorie.jpg" alt="Caloric Deficit & BMR Image">
+    </section>
+
+    <!-- Caloric Deficit Calculator -->
+    <section class="calculator">
+      <h2>Caloric Deficit Calculator</h2>
+      <form id="calorieForm">
+        <label for="bmrInput">Your Current BMR (Enter your known BMR):</label>
+        <input type="number" id="bmrInput" required placeholder="Enter your BMR">
+
+        <label for="deficit">Desired Daily Deficit (calories):</label>
+        <input type="number" id="deficit" required placeholder="Enter calorie deficit">
+
+        <button type="submit">Calculate Daily Calories</button>
+      </form>
+      <div id="calorieResult" class="result"></div>
+    </section>
+
+    <!-- BMR Calculator -->
+    <section class="calculator">
+      <h2>BMR Calculator</h2>
+      <form id="bmrCalcForm">
+        <label for="gender">Gender:</label>
+        <select id="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+        <label for="age">Age (years):</label>
+        <input type="number" id="age" required placeholder="Enter your age">
+        <label for="weightBMR">Weight (kg):</label>
+        <input type="number" id="weightBMR" required placeholder="Enter your weight">
+        <label for="heightBMR">Height (cm):</label>
+        <input type="number" id="heightBMR" required placeholder="Enter your height">
+        <button type="submit">Calculate BMR</button>
+      </form>
+      <div id="bmrResult" class="result"></div>
+    </section>
+
+    <section class="references">
+      <h2>References</h2>
+      <p>Caloric deficit and energy balance information sourced from <a href="https://www.choosemyplate.gov/" target="_blank" rel="noopener">ChooseMyPlate</a>.</p>
+      <p>BMR calculations use the Harris–Benedict equations. More info can be found on <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3905294/" target="_blank" rel="noopener">this study</a>.</p>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
